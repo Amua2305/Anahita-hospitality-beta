@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 140" width="100%" height="100%">
+  <defs>
+    <!-- AH Monogram Vertical Gradient -->
+    <linearGradient id="ahVertGradH" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a83c6c" />
+      <stop offset="22%" stop-color="#c44d7d" />
+      <stop offset="50%" stop-color="#dd6e4d" />
+      <stop offset="78%" stop-color="#efa33d" />
+      <stop offset="100%" stop-color="#f8d655" />
+    </linearGradient>
+
+    <!-- Wreath & Double Ring Gradient -->
+    <linearGradient id="wreathGradH" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e0613e" />
+      <stop offset="35%" stop-color="#e88047" />
+      <stop offset="70%" stop-color="#f2ad45" />
+      <stop offset="100%" stop-color="#f9d863" />
+    </linearGradient>
+
+    <!-- Text Horizontal Gradient -->
+    <linearGradient id="textHorizGradH" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f282a5" />
+      <stop offset="25%" stop-color="#e87895" />
+      <stop offset="55%" stop-color="#e88965" />
+      <stop offset="82%" stop-color="#f3bd49" />
+      <stop offset="100%" stop-color="#f8dc65" />
+    </linearGradient>
+
+    <filter id="subtleGlowH" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1.0" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <g filter="url(#subtleGlowH)">
+    <!-- LEFT CIRCULAR EMBLEM (Scaled & Centered at X=70, Y=70, Radius=56) -->
+    <g transform="translate(-20, 0) scale(0.36) translate(10, -8)">
+      <!-- Primary Outer Ring -->
+      <circle cx="250" cy="205" r="158" fill="none" stroke="url(#wreathGradH)" stroke-width="2.8" />
+      <!-- Offset Inner Secondary Ring -->
+      <path d="M 102 235 A 152 152 0 1 1 398 175" fill="none" stroke="url(#wreathGradH)" stroke-width="1.8" opacity="0.85" />
+
+      <!-- TOP-RIGHT BOTANICAL LEAF BRANCH -->
+      <g stroke="url(#wreathGradH)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M 370 120 C 390 100 415 85 435 95 C 445 102 438 120 420 135" stroke-width="2.2" />
+        <path d="M 405 88 C 420 70 440 72 432 88 C 422 98 410 92 405 88 Z" fill="none" stroke-width="1.8" />
+        <path d="M 408 87 L 426 80" stroke-width="1.2" />
+        <path d="M 425 96 C 448 90 460 106 444 116 C 432 122 422 108 425 96 Z" fill="none" stroke-width="1.8" />
+        <path d="M 427 98 L 445 105" stroke-width="1.2" />
+        <path d="M 418 120 C 442 122 448 142 430 148 C 418 148 414 132 418 120 Z" fill="none" stroke-width="1.8" />
+        <path d="M 420 122 L 434 135" stroke-width="1.2" />
+        <path d="M 388 102 C 398 84 414 90 406 104 C 398 112 390 108 388 102 Z" fill="none" stroke-width="1.6" />
+        <path d="M 390 102 L 402 94" stroke-width="1.0" />
+        <path d="M 398 122 C 412 112 422 125 412 134 C 402 138 396 128 398 122 Z" fill="none" stroke-width="1.6" />
+        <path d="M 399 123 L 410 124" stroke-width="1.0" />
+      </g>
+
+      <!-- BOTTOM-LEFT BOTANICAL LEAF BRANCH -->
+      <g stroke="url(#wreathGradH)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M 130 290 C 110 310 85 325 65 315 C 55 308 62 290 80 275" stroke-width="2.2" />
+        <path d="M 95 322 C 80 340 60 338 68 322 C 78 312 90 318 95 322 Z" fill="none" stroke-width="1.8" />
+        <path d="M 92 323 L 74 330" stroke-width="1.2" />
+        <path d="M 75 314 C 52 320 40 304 56 294 C 68 288 78 302 75 314 Z" fill="none" stroke-width="1.8" />
+        <path d="M 73 312 L 55 305" stroke-width="1.2" />
+        <path d="M 82 290 C 58 288 52 268 70 262 C 82 262 86 278 82 290 Z" fill="none" stroke-width="1.8" />
+        <path d="M 80 288 L 66 275" stroke-width="1.2" />
+        <path d="M 112 308 C 102 326 86 320 94 306 C 102 298 110 302 112 308 Z" fill="none" stroke-width="1.6" />
+        <path d="M 110 308 L 98 316" stroke-width="1.0" />
+        <path d="M 102 288 C 88 298 78 285 88 276 C 98 272 104 282 102 288 Z" fill="none" stroke-width="1.6" />
+        <path d="M 101 287 L 90 286" stroke-width="1.0" />
+      </g>
+
+      <!-- INTERLOCKED MONOGRAM "AH" -->
+      <g fill="url(#ahVertGradH)">
+        <path d="M 152 305 L 152 297 C 165 297 172 293 182 268 L 220 162 C 226 145 230 120 236 120 C 241 120 244 135 248 148 L 282 258 C 290 285 298 297 312 297 L 312 305 L 258 305 L 258 297 C 269 297 274 292 268 274 L 258 244 L 202 244 L 188 280 C 183 293 189 297 200 297 L 200 305 Z M 207 228 L 252 228 L 233 162 Z" />
+        <path d="M 292 120 L 348 120 L 348 128 C 338 128 333 133 333 146 L 333 198 L 384 198 L 384 146 C 384 133 379 128 369 128 L 369 120 L 422 120 L 422 128 C 412 128 407 133 407 146 L 407 279 C 407 292 412 297 422 297 L 422 305 L 369 305 L 369 297 C 379 297 384 292 384 279 L 384 214 L 333 214 L 333 279 C 333 292 338 297 348 297 L 348 305 L 292 305 L 292 297 C 302 297 307 292 307 279 L 307 146 C 307 133 302 128 292 128 Z" />
+      </g>
+    </g>
+
+    <!-- RIGHT BRAND TYPOGRAPHY -->
+    <text x="145" y="65" fill="url(#textHorizGradH)" font-family="'Plus Jakarta Sans', 'Cinzel', 'Playfair Display', sans-serif" font-size="28" font-weight="700" letter-spacing="6">
+      ANAHITA
+    </text>
+    <text x="146" y="92" fill="url(#textHorizGradH)" font-family="'Plus Jakarta Sans', 'Montserrat', sans-serif" font-size="14" font-weight="500" letter-spacing="8" opacity="0.92">
+      HOSPITALITY
+    </text>
+    
+    <!-- Delicate accent line -->
+    <line x1="146" y1="104" x2="490" y2="104" stroke="url(#textHorizGradH)" stroke-width="0.8" opacity="0.35" />
+  </g>
+</svg>
