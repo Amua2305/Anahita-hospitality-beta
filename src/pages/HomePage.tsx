@@ -146,7 +146,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onPageChange, onOpenConsulta
             {
               page: 'weddings' as PageType,
               title: 'Weddings & Celebrations',
-              badge: 'Vision Vivaah Standard',
+              badge: 'Standard Vivaah',
               desc: 'Royal palace weddings in Udaipur, cliffside celebrations on the Amalfi Coast & Maldivian beach ceremonies.',
               image: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=800'
             },

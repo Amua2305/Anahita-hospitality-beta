@@ -92,15 +92,31 @@ export const AiAdvisorWidget: React.FC = () => {
 
   return (
     <>
-      {/* Floating Widget Toggle Button */}
-      <div className="fixed bottom-6 right-6 z-40">
+      {/* Floating Action Buttons (Right side fixed) */}
+      <div className="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-3">
+        {/* WhatsApp Floating Icon Button */}
+        <a
+          id="btn-whatsapp-floating"
+          href="https://wa.me/917303907800?text=Hello%20Anahita%20Hospitality%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-12 h-12 rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110 border border-white/20"
+          title="Chat on WhatsApp (+91 73039 07800)"
+          aria-label="Chat on WhatsApp"
+        >
+          <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.149 4.197 4.292-1.127zm11.305-6.666c-.198-.1-1.171-.578-1.353-.644-.181-.066-.313-.1-.444.1-.131.198-.511.644-.627.776-.115.132-.23.149-.427.05-.198-.099-.836-.308-1.592-.982-.589-.525-.987-1.173-1.103-1.371-.116-.198-.012-.304.087-.403.089-.088.198-.23.297-.346.099-.115.132-.198.198-.33.066-.131.033-.247-.016-.346-.05-.099-.445-1.072-.61-1.467-.16-.384-.324-.332-.444-.338l-.378-.007c-.131 0-.344.049-.525.247-.181.198-.691.676-.691 1.649 0 .973.708 1.914.807 2.046.099.131 1.393 2.128 3.376 2.984.471.203.839.324 1.126.416.474.151.905.13 1.246.079.38-.058 1.171-.478 1.338-.94.165-.462.165-.857.115-.94-.049-.083-.181-.133-.379-.232z"/>
+          </svg>
+        </a>
+
+        {/* Floating Widget Toggle Button */}
         {!isOpen && (
           <button
             id="btn-open-ai-advisor"
             onClick={() => setIsOpen(true)}
             className="group flex items-center gap-3 bg-[#121824] hover:bg-[#1a2233] border border-[#c5a059] text-[#c5a059] px-4 py-3 rounded-full shadow-2xl transition-all duration-300 hover:scale-105"
           >
-            <div className="w-8 h-8 rounded-full bg-[#c5a059] text-[#0b0f17] flex items-center justify-center font-bold">
+            <div className="w-8 h-8 rounded-full bg-[#c5a059] text-[#0b0f17] flex items-center justify-center font-bold shrink-0">
               <Sparkles className="w-4 h-4" />
             </div>
             <div className="hidden sm:flex flex-col text-left">
