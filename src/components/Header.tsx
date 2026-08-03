@@ -156,6 +156,21 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, onPageChange, onOpe
           </button>
 
           <button
+            id="nav-link-blog"
+            onClick={() => handleNavClick('blog')}
+            className={`px-3 lg:px-4 py-2 text-xs font-medium uppercase tracking-[0.18em] transition-all relative ${
+              currentPage === 'blog'
+                ? 'text-[#c5a059] font-semibold'
+                : 'text-slate-300 hover:text-white'
+            }`}
+          >
+            Blog
+            {currentPage === 'blog' && (
+              <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-[2px] bg-[#c5a059] rounded-full" />
+            )}
+          </button>
+
+          <button
             id="nav-link-contact"
             onClick={() => handleNavClick('contact')}
             className={`px-3 lg:px-4 py-2 text-xs font-medium uppercase tracking-[0.18em] transition-all relative ${
@@ -227,6 +242,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, onPageChange, onOpe
               { id: 'international-travel', label: 'International Travel' },
               { id: 'mice', label: 'MICE & Corporate' },
               { id: 'gallery', label: 'Gallery' },
+              { id: 'blog', label: 'Blog & Journal' },
               { id: 'contact', label: 'Contact' }
             ].map((item) => (
               <button

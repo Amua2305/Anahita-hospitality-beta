@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { PageType, Property } from './types';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
@@ -11,6 +11,7 @@ import { DomesticTravelPage } from './pages/DomesticTravelPage';
 import { InternationalTravelPage } from './pages/InternationalTravelPage';
 import { MicePage } from './pages/MicePage';
 import { GalleryPage } from './pages/GalleryPage';
+import { BlogPage } from './pages/BlogPage';
 import { ContactPage } from './pages/ContactPage';
 import { ConsultationModal } from './components/ConsultationModal';
 import { PropertyModal } from './components/PropertyModal';
@@ -21,9 +22,16 @@ export default function App() {
   const [isConsultationOpen, setIsConsultationOpen] = useState(false);
   const [selectedProperty, setSelectedProperty] = useState<Property | null>(null);
 
+  // Pop up contact form on initial page load / refresh
+  useEffect(() => {
+    setIsConsultationOpen(true);
+  }, []);
+
+  // Pop up contact form whenever switching from one page to another
   const handlePageChange = (page: PageType) => {
     setCurrentPage(page);
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    setIsConsultationOpen(true);
   };
 
   const renderPage = () => {
@@ -83,6 +91,13 @@ export default function App() {
         );
       case 'gallery':
         return <GalleryPage />;
+      case 'blog':
+        return (
+          <BlogPage
+            onPageChange={handlePageChange}
+            onOpenConsultation={() => setIsConsultationOpen(true)}
+          />
+        );
       case 'contact':
         return (
           <ContactPage

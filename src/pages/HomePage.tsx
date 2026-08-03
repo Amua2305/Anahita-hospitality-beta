@@ -73,7 +73,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onPageChange, onOpenConsulta
                 const elem = document.getElementById('specialized-wings-home') || document.getElementById('signature-properties-section');
                 elem?.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="w-full sm:w-auto px-8 py-4 bg-[#c5a059] hover:bg-[#e2c887] text-[#0b0f17] text-xs font-semibold uppercase tracking-[0.2em] rounded-xs shadow-2xl transition-all duration-300 flex items-center justify-center gap-3">
+              className="w-full sm:w-auto px-8 py-4 bg-[#c5a059] hover:bg-[#e2c887] text-[#0b0f17] text-xs font-semibold uppercase tracking-[0.2em] rounded-xs sgihadow-2xl transition-all duration-300 flex items-center justify-center gap-3">
               <span>Explore Our Divisions</span>
               <ArrowRight className="w-4 h-4" />
             </button>

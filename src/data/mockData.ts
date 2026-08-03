@@ -1,4 +1,4 @@
-import { Property, ServiceItem, TeamMember, GalleryItem, GlobalOffice, Testimonial, WeddingPackage, TravelDestination, MiceService } from '../types';
+import { Property, ServiceItem, TeamMember, GalleryItem, GlobalOffice, Testimonial, WeddingPackage, TravelDestination, MiceService, BlogPost } from '../types';
 
 export const SIGNATURE_PROPERTIES: Property[] = [
   {
@@ -535,6 +535,136 @@ export const MICE_SERVICES: MiceService[] = [
       'High-Security Asset Protection Protocols'
     ],
     caseStudyMetric: '$50M+ In Immediate Client Sales Lead Generation'
+  }
+];
+
+export const BLOG_POSTS: BlogPost[] = [
+  {
+    id: 'blog-1',
+    title: 'The Evolution of High-Yield Hospitality: Elevating ADR and RevPAR in Luxury Resorts',
+    slug: 'evolution-high-yield-hospitality',
+    category: 'Hospitality Trends',
+    readTime: '6 min read',
+    date: 'July 28, 2026',
+    author: {
+      name: 'Amrit Singh',
+      role: 'Founder & Senior Managing Partner',
+      avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=300'
+    },
+    image: 'https://media.licdn.com/dms/image/v2/D4E12AQFzCUXI4JjWjw/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1664351128180?e=2147483647&v=beta&t=yy2Q-l-0996_ECbJei266e18lF2mjZ4oEN0p-ldu7nQ',
+    excerpt: 'How strategic asset positioning, bespoke butler services, and data-driven revenue management drive exceptional yields across elite hotel properties worldwide.',
+    content: [
+      'In the modern luxury hospitality landscape, discerning travelers no longer seek mere physical accommodation; they demand transformative, highly curated sensory experiences. For hotel owners and asset managers, achieving sustained growth in Average Daily Rate (ADR) and Revenue Per Available Room (RevPAR) requires a fundamental shift toward hyper-personalized service and distinct brand positioning.',
+      'At Anahita Hospitality, our asset management framework focuses on three pillars: architectural ambiance curation, precision dynamic pricing algorithms, and white-glove European butler protocols. Properties under our operational stewardship have consistently seen a 28% increase in net operational margins within 12 months.',
+      'By integrating hyper-localized cultural wellness offerings and Michelin-inspired gastronomy, luxury resorts transform standard guest stays into memorable life highlights—driving repeat visits and sovereign brand loyalty.'
+    ],
+    tags: ['Hospitality Management', 'ADR Elevation', 'RevPAR Strategy', 'Asset Advisory'],
+    featured: true
+  },
+  {
+    id: 'blog-2',
+    title: 'Curating Royal Palatial Weddings: From Rajasthan Forts to French Riviera Estates',
+    slug: 'curating-royal-palatial-weddings',
+    category: 'Weddings',
+    readTime: '5 min read',
+    date: 'July 20, 2026',
+    author: {
+      name: 'Elena Rostova',
+      role: 'Global Celebrations Director',
+      avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=300'
+    },
+    image: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1200',
+    excerpt: 'An inside look at the complex logistics, architectural lighting, and bespoke culinary curations that transform royal heritage venues into fairytale celebrations.',
+    content: [
+      'Hosting a multi-day royal wedding across century-old forts or private coastal villas requires military-grade logistical precision blended with poetic artistic flair. Every element, from custom floral installations to private charter arrivals, must reflect the unique heritage and personal aesthetic of the couple.',
+      'Our team coordinates directly with heritage conservationists, world-class lighting designers, and Michelin-starred chefs to execute seamless, magical celebrations for up to 2,000 distinguished guests without compromising the venue’s sanctity or guest privacy.',
+      'Whether setting up candlelit royal courtyard dinners in Udaipur or private yacht receptions in Saint-Tropez, Anahita ensures every moment becomes an unforgettable chapter in family legacy.'
+    ],
+    tags: ['Royal Weddings', 'Destination Celebration', 'Palace Venues', 'Event Logistics']
+  },
+  {
+    id: 'blog-3',
+    title: 'Sovereign Living: Private Island & Cliffside Estate Acquisitions in 2026',
+    slug: 'sovereign-living-private-island-acquisitions',
+    category: 'Real Estate',
+    readTime: '7 min read',
+    date: 'July 14, 2026',
+    author: {
+      name: 'Devraj Chauhan',
+      role: 'Principal Real Estate Strategist',
+      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=300'
+    },
+    image: 'https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&q=80&w=1200',
+    excerpt: 'Key considerations for ultra-high-net-worth investors acquiring marquee hospitality assets and private sanctuaries in prime global destinations.',
+    content: [
+      'Marquee real estate assets—such as cliffside villas along the Amalfi Coast, private islands in the Maldives, or heritage hunting lodges in the Himalayas—remain resilient storehouses of capital and generational prestige.',
+      'When acquiring premier hospitality or residential assets, investors must evaluate zoning rights, eco-sustainability infrastructure, local luxury tourism demand, and potential rental yields when managed by premier operating brands.',
+      'At Anahita Prime Real Estate, we bridge ultra-high-net-worth buyers with off-market, highly confidential property opportunities backed by full legal, operational, and architectural advisory.'
+    ],
+    tags: ['Luxury Real Estate', 'Private Islands', 'Hospitality Assets', 'Off-Market Investment']
+  },
+  {
+    id: 'blog-4',
+    title: 'The Renaissance of Slow Travel: Maharajas’ Express & Backwater Yacht Charters',
+    slug: 'renaissance-of-slow-travel-luxury-trains',
+    category: 'Luxury Travel',
+    readTime: '4 min read',
+    date: 'June 30, 2026',
+    author: {
+      name: 'Sophia Laurent',
+      role: 'Private Charters & Journeys Lead',
+      avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=300'
+    },
+    image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=1200',
+    excerpt: 'Rediscovering royal corridors through luxury train journeys, private backwater houseboats, and alpine helicopter safaris.',
+    content: [
+      'In an era dominated by rapid long-haul flights, ultra-discerning travelers are embracing slow, immersive luxury journeys that celebrate the passage through time and scenery.',
+      'Traveling across India’s golden triangle aboard the Maharajas’ Express or chartering a private solar-powered luxury cruiser through Kerala’s tranquil backwaters combines royal heritage, 5-star gastronomy, and intimate local cultural access.',
+      'Anahita curates fully customized private train cars and luxury houseboats with dedicated private chefs, historians, and wellness therapists on board.'
+    ],
+    tags: ['Luxury Travel', 'Maharajas Express', 'India Heritage', 'Bespoke Journeys']
+  },
+  {
+    id: 'blog-5',
+    title: 'Designing Impactful MICE Assemblies: Where Strategy Meets Sanctuary',
+    slug: 'designing-impactful-mice-assemblies',
+    category: 'MICE & Leadership',
+    readTime: '5 min read',
+    date: 'June 18, 2026',
+    author: {
+      name: 'Amrit Singh',
+      role: 'Founder & Senior Managing Partner',
+      avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=300'
+    },
+    image: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=1200',
+    excerpt: 'Why C-suite boards and tech innovators are ditching traditional convention halls for secluded, high-tech luxury sanctuaries.',
+    content: [
+      'Corporate conventions and board retreats are undergoing a major shift. Modern enterprise leaders recognize that high-impact strategic alignment happens when executives are placed in inspiring, distraction-free environments.',
+      'Combining state-of-the-art 3D stage production and encrypted communications with holistic wellness, organic culinary menus, and team-building rally races leads to record engagement and actionable leadership breakthroughs.',
+      'Our MICE division handles turnkey execution for international corporate summits, handling venue buyouts, delegate airlifts, VIP security, and immersive gala productions.'
+    ],
+    tags: ['MICE Events', 'Executive Retreats', 'Corporate Summits', 'Keynote Production']
+  },
+  {
+    id: 'blog-6',
+    title: 'The Art of European Butler Protocol in Asian Hospitality Standards',
+    slug: 'art-of-european-butler-protocol',
+    category: 'Hospitality Trends',
+    readTime: '5 min read',
+    date: 'June 05, 2026',
+    author: {
+      name: 'Elena Rostova',
+      role: 'Global Celebrations Director',
+      avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=300'
+    },
+    image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=1200',
+    excerpt: 'Blending traditional European butler etiquette with the warm, intuitive grace of Asian hospitality to create unforgettable guest experiences.',
+    content: [
+      'Exceptional service is unobtrusive, predictive, and deeply empathetic. The modern luxury traveler expects their preferences—from room temperature and pillow selections to dietary requirements—to be anticipated seamlessly before they even speak.',
+      'By training service staff in classic British and Swiss butler academies while preserving the warm, heartfelt spirit of oriental hospitality, Anahita sets new benchmarks in 5-star guest satisfaction ratings.',
+      'The result is a elevated, home-away-from-home feeling where luxury hotel guests feel genuinely cared for and valued.'
+    ],
+    tags: ['Butler Service', 'Guest Experience', 'Hospitality Protocol', 'Excellence']
   }
 ];
 

@@ -1,4 +1,23 @@
-export type PageType = 'home' | 'about' | 'services' | 'real-estate' | 'weddings' | 'domestic-travel' | 'international-travel' | 'mice' | 'gallery' | 'contact';
+export type PageType = 'home' | 'about' | 'services' | 'real-estate' | 'weddings' | 'domestic-travel' | 'international-travel' | 'mice' | 'gallery' | 'blog' | 'contact';
+
+export interface BlogPost {
+  id: string;
+  title: string;
+  slug: string;
+  category: 'Hospitality Trends' | 'Real Estate' | 'Weddings' | 'Luxury Travel' | 'MICE & Leadership';
+  readTime: string;
+  date: string;
+  author: {
+    name: string;
+    role: string;
+    avatar: string;
+  };
+  image: string;
+  excerpt: string;
+  content: string[];
+  tags: string[];
+  featured?: boolean;
+}
 
 export interface WeddingPackage {
   id: string;

@@ -31,6 +31,7 @@ export const Footer: React.FC<FooterProps> = ({ onPageChange, onOpenConsultation
     { id: 'international-travel', label: 'International Travel' },
     { id: 'mice', label: 'MICE & Corporate Events' },
     { id: 'gallery', label: 'Visual Gallery' },
+    { id: 'blog', label: 'Blog & Journal' },
     { id: 'contact', label: 'Contact Us' }
   ];
 
@@ -89,7 +90,9 @@ export const Footer: React.FC<FooterProps> = ({ onPageChange, onOpenConsultation
           <div className="flex items-center">
             <Logo size="xl" variant="full" />
           </div>
-  
+          <p className="text-xs text-slate-400 leading-relaxed">
+            Pioneering bespoke asset curation, luxury travel, royal celebrations, and immersive experiences across global prime destinations.
+          </p>
           <div className="pt-2 flex items-center gap-3 text-slate-400">
             <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-full border border-slate-800 flex items-center justify-center hover:border-[#c5a059] hover:text-[#c5a059] transition-all">
               <Linkedin className="w-4 h-4" />
@@ -135,7 +138,7 @@ export const Footer: React.FC<FooterProps> = ({ onPageChange, onOpenConsultation
           <div className="space-y-3 text-xs">
             <div>
               <p className="text-white font-medium text-xs">Noida Uttar Pradesh (HQ)</p>
-              <p className="text-slate-500 text-[11px]"> B-88, Sector-2 Uttar Pradesh 201301</p>
+              <p className="text-slate-500 text-[11px]"> B-88, Sector-2</p>
             </div>
           </div>
         </div>
@@ -151,7 +154,7 @@ export const Footer: React.FC<FooterProps> = ({ onPageChange, onOpenConsultation
           <div className="space-y-2 text-xs pt-1">
             <div className="flex items-center gap-2">
               <Phone className="w-3.5 h-3.5 text-[#c5a059]" />
-              <span className="text-slate-300">+91 7303907800</span>
+              <span className="text-slate-300">+917303907800</span>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="w-3.5 h-3.5 text-[#c5a059]" />
@@ -172,7 +175,7 @@ export const Footer: React.FC<FooterProps> = ({ onPageChange, onOpenConsultation
       {/* Bottom Legal Bar */}
       <div className="border-t border-slate-800/80 bg-[#05080e] py-6 px-4 sm:px-6 lg:px-8 text-xs text-slate-500">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p>© {new Date().getFullYear()} Anahita Hospitality. All rights reserved| Web Design & Development By AddWeb.</p>
+          <p>© {new Date().getFullYear()} Anahita Group. All rights reserved.</p>
           <div className="flex items-center gap-6 text-[11px]">
             <a href="#privacy" onClick={(e) => { e.preventDefault(); alert("Anahita Privacy Policy: All client communication and property records are managed under sovereign non-disclosure standards."); }} className="hover:text-slate-300 transition-colors">Privacy Policy</a>
             <a href="#terms" onClick={(e) => { e.preventDefault(); alert("Anahita Terms of Curation: Services governed under sovereign asset advisory standards."); }} className="hover:text-slate-300 transition-colors">Terms of Curation</a>
