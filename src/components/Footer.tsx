@@ -138,7 +138,16 @@ export const Footer: React.FC<FooterProps> = ({ onPageChange, onOpenConsultation
           <div className="space-y-3 text-xs">
             <div>
               <p className="text-white font-medium text-xs">Noida Uttar Pradesh (HQ)</p>
-              <p className="text-slate-500 text-[11px]"> B-88, Sector-2</p>
+              <a
+                href="https://share.google/XvmgCkkFUlQtbmTak"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-[#c5a059] text-[11px] inline-flex items-center gap-1 transition-colors group mt-1"
+              >
+                <MapPin className="w-3 h-3 text-[#c5a059] shrink-0" />
+                <span className="group-hover:underline">B-88, Sector-2</span>
+                <ArrowUpRight className="w-3 h-3 opacity-60 group-hover:opacity-100 transition-opacity" />
+              </a>
             </div>
           </div>
         </div>
@@ -152,14 +161,20 @@ export const Footer: React.FC<FooterProps> = ({ onPageChange, onOpenConsultation
             Speak directly with our asset management principals regarding private consultations or asset audits.
           </p>
           <div className="space-y-2 text-xs pt-1">
-            <div className="flex items-center gap-2">
+            <a
+              href="tel:+917303907800"
+              className="flex items-center gap-2 text-slate-300 hover:text-[#c5a059] transition-colors"
+            >
               <Phone className="w-3.5 h-3.5 text-[#c5a059]" />
-              <span className="text-slate-300">+917303907800</span>
-            </div>
-            <div className="flex items-center gap-2">
+              <span>+917303907800</span>
+            </a>
+            <a
+              href="mailto:info.anahitahospitality@gmail.com"
+              className="flex items-center gap-2 text-slate-300 hover:text-[#c5a059] transition-colors"
+            >
               <Mail className="w-3.5 h-3.5 text-[#c5a059]" />
-              <span className="text-slate-300">info.anahitahospitality@gmail.com</span>
-            </div>
+              <span className="break-all">info.anahitahospitality@gmail.com</span>
+            </a>
           </div>
 
           <button
