@@ -21,17 +21,37 @@ export default function App() {
   const [currentPage, setCurrentPage] = useState<PageType>('home');
   const [isConsultationOpen, setIsConsultationOpen] = useState(false);
   const [selectedProperty, setSelectedProperty] = useState<Property | null>(null);
+  const [hasSubmittedForm, setHasSubmittedForm] = useState<boolean>(() => {
+    try {
+      return localStorage.getItem('anahita_form_submitted') === 'true';
+    } catch {
+      return false;
+    }
+  });
 
-  // Pop up contact form on initial page load / refresh
+  // Pop up contact form on initial page load / refresh if on blog page and form has not been submitted yet
   useEffect(() => {
-    setIsConsultationOpen(true);
-  }, []);
+    if (!hasSubmittedForm && currentPage === 'blog') {
+      setIsConsultationOpen(true);
+    }
+  }, [hasSubmittedForm, currentPage]);
 
-  // Pop up contact form whenever switching from one page to another
+  // Pop up contact form whenever switching to the blog page if form has not been submitted yet
   const handlePageChange = (page: PageType) => {
     setCurrentPage(page);
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    setIsConsultationOpen(true);
+    if (!hasSubmittedForm && page === 'blog') {
+      setIsConsultationOpen(true);
+    }
+  };
+
+  const handleFormSubmitted = () => {
+    setHasSubmittedForm(true);
+    try {
+      localStorage.setItem('anahita_form_submitted', 'true');
+    } catch {
+      // ignore quota / storage access errors
+    }
   };
 
   const renderPage = () => {
@@ -139,6 +159,7 @@ export default function App() {
       <ConsultationModal
         isOpen={isConsultationOpen}
         onClose={() => setIsConsultationOpen(false)}
+        
       />
 
       <PropertyModal

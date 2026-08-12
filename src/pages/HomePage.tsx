@@ -139,7 +139,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onPageChange, onOpenConsulta
             {
               page: 'real-estate' as PageType,
               title: 'Luxury Real Estate',
-              badge: 'Prime Asset Division',
+              badge: 'Estate Consultant',
               desc: 'Luxury villas, mountain retreats, boutique resort buyouts & land development plots.',
               image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=800'
             },
@@ -153,21 +153,21 @@ export const HomePage: React.FC<HomePageProps> = ({ onPageChange, onOpenConsulta
             {
               page: 'domestic-travel' as PageType,
               title: 'Domestic Travel',
-              badge: 'India Heritage Tours',
+              badge: 'Domestic Destination',
               desc: 'Maharajas’ Express luxury trains, Rajasthan royal palace stays & Kerala backwater houseboat cruises.',
               image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=800'
             },
             {
               page: 'international-travel' as PageType,
               title: 'International Travel',
-              badge: 'Global Holidays',
+              badge: 'international holidays',
               desc: 'Maldives overwater villas, Amalfi Coast yachts, Kyoto cultural tours & Alpine ski chalets.',
               image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=800'
             },
             {
               page: 'mice' as PageType,
               title: 'MICE & Corporate Events',
-              badge: 'MICEpro Standard',
+              badge: 'MICE',
               desc: 'Executive board meetings, employee incentive retreats, large global conventions & product launches.',
               image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800'
             }
@@ -257,7 +257,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onPageChange, onOpenConsulta
       <section id="why-choose-us-section" className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-16">
         <div className="text-center max-w-3xl mx-auto space-y-3">
           <span className="text-xs uppercase tracking-[0.3em] text-[#c5a059] font-medium">
-            The Anahita Distinction
+            The Anahita Hospitality
           </span>
           <h2 className="text-3xl sm:text-5xl font-serif-luxury text-white font-medium">
             Why Discerning Clients Choose Us

@@ -17,14 +17,14 @@ async function startServer() {
 
       if (!apiKey) {
         return res.json({
-          reply: "Anahita Hospitality specializes in 4 core pillars: Weddings & Celebrations (Vision Vivaah), Domestic Travel (India Heritage Tours), International Travel (Global Luxury Holidays), and MICE & Corporate Events (MICEpro)."
+          reply: "Anahita Hospitality specializes in 4 core pillars: Weddings & Celebrations (Wedding), Domestic Travel (Domestic Destination), International Travel (international holidays), and MICE & Corporate Events (MICE)."
         });
       }
 
       const ai = new GoogleGenAI({ apiKey });
       const response = await ai.models.generateContent({
         model: "gemini-2.5-flash",
-        contents: `You are Anahita Group's Senior Event & Luxury Travel Concierge Advisor. You provide concise, ultra-luxurious, highly helpful advice regarding destination wedding planning (royal palaces, beach ceremonies), domestic India heritage tours (luxury trains, Rajasthan stays), international holidays (Maldives, Europe, ski resorts), and corporate MICE events (executive summits, conferences, retreats). Keep your answer under 100 words, warm, clear, professional, and sophisticated.
+        contents: `You are Anahita Group's Senior Event & Luxury Travel Concierge Advisor. You provide concise, ultra-luxurious, highly helpful advice regarding destination wedding planning (royal palaces, beach ceremonies), Domestic Destination (luxury trains, Rajasthan stays), international holidays (Maldives, Europe, ski resorts), and corporate MICE events (executive summits, conferences, retreats). Keep your answer under 100 words, warm, clear, professional, and sophisticated.
 User Query: "${message}"`
       });
 

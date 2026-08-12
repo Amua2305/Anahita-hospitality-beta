@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { PageType } from '../types';
-import { Send, MapPin, Mail, Phone, CheckCircle, ArrowUpRight, Instagram, Linkedin, Globe } from 'lucide-react';
+import { Send, MapPin, Mail, Phone, CheckCircle, ArrowUpRight, Instagram, Linkedin, Globe, Facebook } from 'lucide-react';
 import { Logo } from './Logo';
 
 interface FooterProps {
@@ -56,7 +56,7 @@ export const Footer: React.FC<FooterProps> = ({ onPageChange, onOpenConsultation
             {subscribed ? (
               <div id="newsletter-subscribed-msg" className="flex items-center gap-2 bg-[#122417] border border-emerald-600/40 text-emerald-400 px-6 py-3 rounded-xs text-xs font-medium">
                 <CheckCircle className="w-4 h-4 text-emerald-400" />
-                <span>You are now subscribed to Anahita Sovereign Insights.</span>
+                <span>You are now subscribed to Anahita Hospitality.</span>
               </div>
             ) : (
               <form id="footer-newsletter-form" onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-2 w-full max-w-md">
@@ -90,15 +90,16 @@ export const Footer: React.FC<FooterProps> = ({ onPageChange, onOpenConsultation
           <div className="flex items-center">
             <Logo size="xl" variant="full" />
           </div>
-          <p className="text-xs text-slate-400 leading-relaxed">
-            Pioneering bespoke asset curation, luxury travel, royal celebrations, and immersive experiences across global prime destinations.
-          </p>
+          
           <div className="pt-2 flex items-center gap-3 text-slate-400">
             <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-full border border-slate-800 flex items-center justify-center hover:border-[#c5a059] hover:text-[#c5a059] transition-all">
               <Linkedin className="w-4 h-4" />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-full border border-slate-800 flex items-center justify-center hover:border-[#c5a059] hover:text-[#c5a059] transition-all">
+            <a href="https://www.instagram.com/anahitahospitality?igsh=Z281NTZpaWVuNGdk" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-full border border-slate-800 flex items-center justify-center hover:border-[#c5a059] hover:text-[#c5a059] transition-all">
               <Instagram className="w-4 h-4" />
+            </a>
+            <a href="https://Facebook.com" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-full border border-slate-800 flex items-center justify-center hover:border-[#c5a059] hover:text-[#c5a059] transition-all">
+              <Facebook className="w-4 h-4" />
             </a>
             <a href="https://anahitahospitality.com" className="w-8 h-8 rounded-full border border-slate-800 flex items-center justify-center hover:border-[#c5a059] hover:text-[#c5a059] transition-all">
               <Globe className="w-4 h-4" />
@@ -139,13 +140,13 @@ export const Footer: React.FC<FooterProps> = ({ onPageChange, onOpenConsultation
             <div>
               <p className="text-white font-medium text-xs">Noida Uttar Pradesh (HQ)</p>
               <a
-                href="https://share.google/XvmgCkkFUlQtbmTak"
+                href="https://www.google.com/maps/dir/28.5844968,77.3137419/Anahita+Hospitality+Pvt.+Ltd.,+Building+No,+Office+No.+T-104,+B-88,+near+Noida+Sec+15+Metro+Station,+Sector+2,+Noida,+Uttar+Pradesh+201301/@28.5847196,77.3115818,851m/data=!3m2!1e3!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x390ce5bc8fdb27f5:0x24195e185460e40b!2m2!1d77.3137054!2d28.584756?entry=ttu&g_ep=EgoyMDI2MDgwOS4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-slate-400 hover:text-[#c5a059] text-[11px] inline-flex items-center gap-1 transition-colors group mt-1"
               >
                 <MapPin className="w-3 h-3 text-[#c5a059] shrink-0" />
-                <span className="group-hover:underline">B-88, Sector-2</span>
+                <span className="group-hover:underline">Building No B-88, Office No T104,Sector-2, Near Noida Sector 15 Metro. </span>
                 <ArrowUpRight className="w-3 h-3 opacity-60 group-hover:opacity-100 transition-opacity" />
               </a>
             </div>
@@ -155,10 +156,10 @@ export const Footer: React.FC<FooterProps> = ({ onPageChange, onOpenConsultation
         {/* Bespoke Inquiry Desk */}
         <div className="space-y-4">
           <h4 className="text-xs uppercase tracking-[0.2em] text-slate-200 font-semibold border-b border-amber-900/30 pb-2">
-            Concierge & Advisory
+            Contact Us
           </h4>
           <p className="text-xs text-slate-400">
-            Speak directly with our asset management principals regarding private consultations or asset audits.
+            Speak directly with our Expert team and give us an opportunity to make your any event Memorable and Unforgatable.
           </p>
           <div className="space-y-2 text-xs pt-1">
             <a
@@ -166,7 +167,7 @@ export const Footer: React.FC<FooterProps> = ({ onPageChange, onOpenConsultation
               className="flex items-center gap-2 text-slate-300 hover:text-[#c5a059] transition-colors"
             >
               <Phone className="w-3.5 h-3.5 text-[#c5a059]" />
-              <span>+917303907800</span>
+              <span>+91 7303907800</span>
             </a>
             <a
               href="mailto:info.anahitahospitality@gmail.com"
@@ -190,7 +191,7 @@ export const Footer: React.FC<FooterProps> = ({ onPageChange, onOpenConsultation
       {/* Bottom Legal Bar */}
       <div className="border-t border-slate-800/80 bg-[#05080e] py-6 px-4 sm:px-6 lg:px-8 text-xs text-slate-500">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p>© {new Date().getFullYear()} Anahita Group. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Anahita Hospitality. All rights reserved. Developed by AddWeb</p>
           <div className="flex items-center gap-6 text-[11px]">
             <a href="#privacy" onClick={(e) => { e.preventDefault(); alert("Anahita Privacy Policy: All client communication and property records are managed under sovereign non-disclosure standards."); }} className="hover:text-slate-300 transition-colors">Privacy Policy</a>
             <a href="#terms" onClick={(e) => { e.preventDefault(); alert("Anahita Terms of Curation: Services governed under sovereign asset advisory standards."); }} className="hover:text-slate-300 transition-colors">Terms of Curation</a>

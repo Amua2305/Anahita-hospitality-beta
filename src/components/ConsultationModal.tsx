@@ -183,9 +183,9 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
                   <option value="Select Option">Select Option</option>
                   <option value="Real Estate Inquiry">Real Estate Acquisition / Listing</option>
                   <option value="Weddings & Celebrations">Weddings & Celebrations</option>
-                  <option value="Domestic Travel">Domestic Travel & India Heritage Tours</option>
+                  <option value="Domestic Travel">Domestic Travel & Domestic Destination</option>
                   <option value="International Travel">International Travel & Private Holidays</option>
-                  <option value="MICE & Corporate Events">MICE & Corporate Events (MICEpro)</option>
+                  <option value="MICE & Corporate Events">MICE & Corporate Events (MICE)</option>
                 </select>
               </div>
 

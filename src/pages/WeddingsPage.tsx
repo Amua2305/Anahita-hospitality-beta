@@ -78,7 +78,7 @@ export const WeddingsPage: React.FC<WeddingsPageProps> = ({ onOpenConsultation }
               <span className="italic font-light text-[#c5a059]">& Royal Celebrations</span>
             </h1>
             <p className="text-slate-300 text-base sm:text-lg font-light leading-relaxed mb-8">
-              Partnering with premier wedding experts (Vision Vivaah standard), Anahita plans unforgettable wedding celebrations in royal Indian palaces, Maldivian sandbanks, and Amalfi Coast cliffside estates.
+              Partnering with premier wedding experts, Anahita plans unforgettable wedding celebrations in royal Indian palaces, Maldivian sandbanks, and Amalfi Coast cliffside estates.
             </p>
 
             <div className="flex flex-wrap gap-4">

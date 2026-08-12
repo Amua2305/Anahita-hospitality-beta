@@ -54,7 +54,7 @@ export const MicePage: React.FC<MicePageProps> = ({ onOpenConsultation }) => {
               <span className="italic font-light text-[#c5a059]">& Product Exhibitions</span>
             </h1>
             <p className="text-slate-300 text-base sm:text-lg font-light leading-relaxed mb-8">
-              Benchmarked against premier event managers (MICEpro standard), Anahita provides complete management for board meetings, team incentive trips, global corporate conferences, and product expos.
+              Benchmarked against premier event managers (MICE), Anahita provides complete management for board meetings, team incentive trips, global corporate conferences, and product expos.
             </p>
 
             <div className="flex flex-wrap gap-4">

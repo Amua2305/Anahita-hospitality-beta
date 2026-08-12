@@ -54,28 +54,28 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onPageChange, onOpen
             {
               page: 'real-estate' as PageType,
               title: 'Luxury Real Estate',
-              badge: 'Prime Asset Division',
+              badge: 'Estate Consultant',
               desc: 'Luxury beachfront villas, mountain retreats, boutique resort acquisitions & land development plots.',
               image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=800'
             },
             {
               page: 'weddings' as PageType,
               title: 'Weddings & Celebrations',
-              badge: 'Vision Vivaah Standard',
+              badge: 'Wedding',
               desc: 'Royal palace weddings in Udaipur, Amalfi Coast cliffside celebrations & Maldivian beach ceremonies.',
               image: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=800'
             },
             {
               page: 'domestic-travel' as PageType,
               title: 'Domestic Travel',
-              badge: 'India Heritage Tours',
+              badge: 'Domestic Destination',
               desc: 'Maharajas’ Express luxury trains, Rajasthan royal palace stays & Kerala backwater houseboat cruises.',
               image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=800'
             },
             {
               page: 'international-travel' as PageType,
               title: 'International Travel',
-              badge: 'Global Holidays',
+              badge: 'international holidays',
               desc: 'Maldives overwater villas, Amalfi Coast superyachts, Kyoto cultural tours & Alpine ski chalets.',
               image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=800'
             },

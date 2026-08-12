@@ -113,7 +113,7 @@ export const SERVICES: ServiceItem[] = [
   {
     id: 'srv-2',
     title: 'Domestic Travel',
-    subtitle: 'Luxury India Heritage Tours & Expeditions',
+    subtitle: 'Luxury Domestic Destination & Expeditions',
     description: 'Experience India’s finest heritage through Maharajas’ Express train journeys, royal Rajasthan fort stays, Himalayan wellness retreats, and Kerala backwater houseboat cruises.',
     iconName: 'Compass',
     image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=1000',
@@ -123,28 +123,28 @@ export const SERVICES: ServiceItem[] = [
       'Himalayan Ayurvedic Wellness Retreats',
       'Private Helicopter & Luxury Chauffeur Escorts'
     ],
-    metric: 'VIP Heritage Access Across India'
+    metric: 'VIP Domestic Destination Access Across India'
   },
   {
     id: 'srv-3',
     title: 'International Travel',
-    subtitle: 'Outbound Global Luxury Holidays & Charters',
+    subtitle: 'Outbound international holidays & Charters',
     description: 'Curated international holidays featuring private overwater island retreats in Maldives, Amalfi Coast superyachts, Kyoto zen tea sanctuaries, and Courchevel Alpine chalets.',
     iconName: 'Globe',
     image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=1000',
     deliverables: [
       'Private Jet & Seaplane Chartering',
       'Exclusive Villa & Superyacht Buyouts',
-      'After-Hours VIP Access to Global Landmarks',
+      'After-Hours VIP Access to international Landmarks',
       '24/7 Dedicated Personal Concierge'
     ],
-    metric: 'Bespoke Global Travel Tailored to You'
+    metric: 'Bespoke international Travel Tailored to You'
   },
   {
     id: 'srv-4',
     title: 'MICE & Corporate Events',
     subtitle: 'Meetings, Incentives, Conferences & Exhibitions (MICEpro Standard)',
-    description: 'Turnkey management for high-security C-suite board meetings, employee incentive retreats, global corporate conventions, and high-impact product launches.',
+    description: 'Turnkey management for high-security C-suite board meetings, employee incentive retreats, international corporate conventions, and high-impact product launches.',
     iconName: 'Briefcase',
     image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1000',
     deliverables: [
@@ -153,7 +153,7 @@ export const SERVICES: ServiceItem[] = [
       'Global Keynote Conventions & Stage Tech',
       'Luxury Product Expos & Launch Galas'
     ],
-    metric: 'Flawless Execution for Global Corporates'
+    metric: 'Flawless Execution for international Corporates'
   }
 ];
 

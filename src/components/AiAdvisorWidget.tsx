@@ -48,7 +48,7 @@ export const AiAdvisorWidget: React.FC = () => {
           ...prev,
           {
             sender: 'ai',
-            text: data.reply || 'Anahita Hospitality offers world-class wedding planning, heritage India tours, international holidays, and corporate MICE summits.',
+            text: data.reply || 'Anahita Hospitality offers world-class wedding planning, Domestic Destination, international holidays, and corporate MICE summits.',
             time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
           }
         ]);
@@ -58,14 +58,14 @@ export const AiAdvisorWidget: React.FC = () => {
     } catch {
       // Intelligent fallback answer based on query keywords
       setTimeout(() => {
-        let reply = "We specialize in 4 core offerings: Weddings & Celebrations (Vision Vivaah standard), Domestic Travel (India heritage tours), International Travel (global luxury holidays), and MICE & Corporate Events (MICEpro standard).";
+        let reply = "We specialize in 4 core offerings: Weddings & Celebrations (Wedding), Domestic Travel (Domestic Destination), International Travel (international holidays), and MICE & Corporate Events (MICE).";
         const lower = userMsg.toLowerCase();
         if (lower.includes('wedding') || lower.includes('vivaah') || lower.includes('marriage')) {
-          reply = "Our Vision Vivaah division crafts royal palace weddings in Udaipur, beachfront ceremonies in the Maldives, and cliffside celebrations in Amalfi with complete catering and decor.";
+          reply = "Our Wedding division crafts royal palace weddings in Udaipur, beachfront ceremonies in the Maldives, and cliffside celebrations in Amalfi with complete catering and decor.";
         } else if (lower.includes('travel') || lower.includes('tour') || lower.includes('holiday') || lower.includes('train')) {
           reply = "We offer bespoke domestic luxury tours (Maharajas' Express, Rajasthan palaces, Kerala houseboats) and international luxury escapes (Maldives, Switzerland, Bali).";
         } else if (lower.includes('mice') || lower.includes('corporate') || lower.includes('conference') || lower.includes('event')) {
-          reply = "Through our MICEpro division, we organize executive summits, global sales conferences, product launches, and incentive retreats with full delegate management.";
+          reply = "Through our MICEpro division, we organize executive summits, international sales conferences, product launches, and incentive retreats with full delegate management.";
         } else if (lower.includes('contact') || lower.includes('phone') || lower.includes('email')) {
           reply = "You can reach us at +91 73039 07800 or info.anahitahospitality@gmail.com. You can also click 'Schedule Consultation' to send a request.";
         }
