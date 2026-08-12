@@ -140,7 +140,7 @@ export const Footer: React.FC<FooterProps> = ({ onPageChange, onOpenConsultation
             <div>
               <p className="text-white font-medium text-xs">Noida Uttar Pradesh (HQ)</p>
               <a
-                href="https://www.google.com/maps/dir/28.5844968,77.3137419/Anahita+Hospitality+Pvt.+Ltd.,+Building+No,+Office+No.+T-104,+B-88,+near+Noida+Sec+15+Metro+Station,+Sector+2,+Noida,+Uttar+Pradesh+201301/@28.5847196,77.3115818,851m/data=!3m2!1e3!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x390ce5bc8fdb27f5:0x24195e185460e40b!2m2!1d77.3137054!2d28.584756?entry=ttu&g_ep=EgoyMDI2MDgwOS4wIKXMDSoASAFQAw%3D%3D"
+                href="https://www.google.com/maps/place/Anahita+Hospitality+Pvt.+Ltd./@28.5847196,77.3115818,851m/data=!3m1!1e3!4m6!3m5!1s0x390ce5bc8fdb27f5:0x24195e185460e40b!8m2!3d28.584756!4d77.3137054!16s%2Fg%2F11zddz_2xb?entry=ttu&g_ep=EgoyMDI2MDgwOS4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-slate-400 hover:text-[#c5a059] text-[11px] inline-flex items-center gap-1 transition-colors group mt-1"

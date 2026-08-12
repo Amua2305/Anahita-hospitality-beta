@@ -130,23 +130,16 @@ export const HomePage: React.FC<HomePageProps> = ({ onPageChange, onOpenConsulta
             </h2>
           </div>
           <p className="text-xs text-slate-400 max-w-md font-light">
-            Explore our dedicated divisions for luxury real estate, royal weddings, India heritage tours, global holidays, and corporate MICE events.
+            Explore our dedicated divisions for royal weddings, India heritage tours, global holidays, and corporate MICE events, luxury real estate.
           </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
           {[
             {
-              page: 'real-estate' as PageType,
-              title: 'Luxury Real Estate',
-              badge: 'Estate Consultant',
-              desc: 'Luxury villas, mountain retreats, boutique resort buyouts & land development plots.',
-              image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=800'
-            },
-            {
               page: 'weddings' as PageType,
               title: 'Weddings & Celebrations',
-              badge: 'Standard Vivaah',
+              badge: 'Weddings',
               desc: 'Royal palace weddings in Udaipur, cliffside celebrations on the Amalfi Coast & Maldivian beach ceremonies.',
               image: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=800'
             },
@@ -170,6 +163,13 @@ export const HomePage: React.FC<HomePageProps> = ({ onPageChange, onOpenConsulta
               badge: 'MICE',
               desc: 'Executive board meetings, employee incentive retreats, large global conventions & product launches.',
               image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800'
+            },
+            {
+              page: 'real-estate' as PageType,
+              title: 'Luxury Real Estate',
+              badge: 'Estate Consultant',
+              desc: 'Luxury villas, mountain retreats, boutique resort buyouts & land development plots.',
+              image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=800'
             }
           ].map((wing) => (
             <div
