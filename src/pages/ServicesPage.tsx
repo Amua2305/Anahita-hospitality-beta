@@ -52,13 +52,6 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onPageChange, onOpen
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5">
           {[
             {
-              page: 'real-estate' as PageType,
-              title: 'Luxury Real Estate',
-              badge: 'Estate Consultant',
-              desc: 'Luxury beachfront villas, mountain retreats, boutique resort acquisitions & land development plots.',
-              image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=800'
-            },
-            {
               page: 'weddings' as PageType,
               title: 'Weddings & Celebrations',
               badge: 'Wedding',
@@ -82,10 +75,18 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onPageChange, onOpen
             {
               page: 'mice' as PageType,
               title: 'MICE & Corporate Events',
-              badge: 'MICEpro Standard',
+              badge: 'MICE Standard',
               desc: 'Executive board meetings, employee incentive retreats, large conventions & luxury product launches.',
               image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800'
+            },
+            {
+              page: 'real-estate' as PageType,
+              title: 'Luxury Real Estate',
+              badge: 'Estate Consultant',
+              desc: 'Luxury beachfront villas, mountain retreats, boutique resort acquisitions & land development plots.',
+              image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=800'
             }
+
           ].map((item) => (
             <div
               key={item.page}

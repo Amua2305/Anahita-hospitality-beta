@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { PageType, Property } from '../types';
-import { SIGNATURE_PROPERTIES, SERVICES, TESTIMONIALS, PROCESS_STEPS } from '../data/mockData';
+import { SIGNATURE_PROPERTIES, SERVICES, PROCESS_STEPS } from '../data/mockData';
 import {
   Sparkles,
   ArrowRight,
   Building2,
   TrendingUp,
-  Star,
+  
   MapPin,
   Calendar,
   ShieldCheck,
@@ -325,43 +325,6 @@ export const HomePage: React.FC<HomePageProps> = ({ onPageChange, onOpenConsulta
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
-      <section id="testimonials-section" className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-12">
-        <div className="text-center max-w-3xl mx-auto space-y-3">
-          <span className="text-xs uppercase tracking-[0.3em] text-[#c5a059] font-medium">
-            Testimonials
-          </span>
-          <h2 className="text-3xl sm:text-5xl font-serif-luxury text-white font-medium">
-            Words from Our Distinguished Guests & Clients
-          </h2>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {TESTIMONIALS.map((t) => (
-            <div key={t.id} className="bg-[#0e1420] p-8 rounded-xs border border-slate-800 space-y-6 flex flex-col justify-between">
-              <div className="space-y-4">
-                <div className="flex text-amber-300 gap-1">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-amber-300 text-amber-300" />
-                  ))}
-                </div>
-                <p className="text-xs italic text-slate-300 leading-relaxed">
-                  "{t.quote}"
-                </p>
-              </div>
-
-              <div className="flex items-center gap-3 pt-4 border-t border-slate-800">
-                <img src={t.image} alt={t.author} className="w-10 h-10 rounded-full object-cover border border-[#c5a059]" />
-                <div>
-                  <h4 className="text-xs font-semibold text-white">{t.author}</h4>
-                  <p className="text-[10px] text-slate-400">{t.role}</p>
-                  <p className="text-[10px] text-[#c5a059]">{t.property}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
 
       {/* CTA BANNER */}
       <section id="home-cta-banner" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#121824] via-[#1c2638] to-[#121824] border-t border-amber-900/30 text-center">
