@@ -60,8 +60,8 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenConsultation }) 
           <Phone className="w-6 h-6 text-[#c5a059]" />
           <h3 className="text-base font-serif-luxury text-white font-semibold">Direct Line</h3>
           <p className="text-xs text-slate-400">Immediate assistance for private owners and guests.</p>
-          <a href="tel:+917303907800" className="text-xs text-amber-200 font-semibold hover:underline block pt-1">
-            +91 7303907800
+          <a href="tel:+91 8840129250" className="text-xs text-amber-200 font-semibold hover:underline block pt-1">
+            +91 8840129250
           </a>
         </div>
 
@@ -79,7 +79,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenConsultation }) 
           <h3 className="text-base font-serif-luxury text-white font-semibold">Contact</h3>
           <p className="text-xs text-slate-400">Full-service travel planning and wedding coordination, tailored to your vision.</p>
           <a href="mailto:press@anahitahospitality.com" className="text-xs text-amber-200 font-semibold hover:underline block pt-1">
-            +91 7303907800
+            +91 8840129250
           </a>
         </div>
       </section>

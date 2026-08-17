@@ -189,12 +189,12 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, onPageChange, onOpe
         {/* Header Right Actions */}
         <div className="hidden sm:flex items-center space-x-4">
           <a
-            href="tel:+917303907800"
+            href="tel:+91 8840129250"
             id="nav-phone-quick"
             className="text-slate-400 hover:text-[#c5a059] text-xs font-medium tracking-wider flex items-center gap-2 transition-colors pr-2 border-r border-slate-800"
           >
             <PhoneCall className="w-3.5 h-3.5 text-[#c5a059]" />
-            <span className="hidden lg:inline">+917303907800</span>
+            <span className="hidden lg:inline">+91 8840129250</span>
           </a>
 
           <button
@@ -279,7 +279,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, onPageChange, onOpe
               className="w-full py-2.5 px-4 text-center border border-slate-700 text-slate-300 hover:text-white text-xs uppercase tracking-wider flex items-center justify-center gap-2"
             >
               <PhoneCall className="w-3.5 h-3.5 text-[#c5a059]" />
-              <span>Call Concierge (+917303907800)</span>
+              <span>Call Concierge (+91 8840129250)</span>
             </a>
           </div>
         </div>

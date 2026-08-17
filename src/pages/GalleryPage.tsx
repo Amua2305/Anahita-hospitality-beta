@@ -171,7 +171,7 @@ export const GalleryPage: React.FC = () => {
           <div className="space-y-2">
             <span className="text-xs uppercase tracking-[0.3em] text-[#c5a059] font-medium flex items-center justify-center gap-2">
               <Instagram className="w-4 h-4" />
-              <span>#AnahitaExcellence</span>
+              <span>#AnahitaHospitality</span>
             </span>
             <h2 className="text-2xl sm:text-4xl font-serif-luxury text-white font-medium">
               Follow Our Luxury Journey

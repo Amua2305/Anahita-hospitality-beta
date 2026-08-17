@@ -163,11 +163,11 @@ export const Footer: React.FC<FooterProps> = ({ onPageChange, onOpenConsultation
           </p>
           <div className="space-y-2 text-xs pt-1">
             <a
-              href="tel:+917303907800"
+              href="tel:+91 8840129250"
               className="flex items-center gap-2 text-slate-300 hover:text-[#c5a059] transition-colors"
             >
               <Phone className="w-3.5 h-3.5 text-[#c5a059]" />
-              <span>+91 7303907800</span>
+              <span>+91 8840129250</span>
             </a>
             <a
               href="mailto:info.anahitahospitality@gmail.com"

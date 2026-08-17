@@ -97,7 +97,7 @@ export const AiAdvisorWidget: React.FC = () => {
         {/* WhatsApp Floating Icon Button */}
         <a
           id="btn-whatsapp-floating"
-          href="https://wa.me/917303907800?text=Hello%20Anahita%20Hospitality%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
+          href="https://wa.me/918840129250?text=Hello%20Anahita%20Hospitality%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
           target="_blank"
           rel="noopener noreferrer"
           className="w-12 h-12 rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110 border border-white/20"
