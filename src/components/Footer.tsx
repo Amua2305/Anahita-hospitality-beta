@@ -98,7 +98,7 @@ export const Footer: React.FC<FooterProps> = ({ onPageChange, onOpenConsultation
             <a href="https://www.instagram.com/anahitahospitality?igsh=Z281NTZpaWVuNGdk" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-full border border-slate-800 flex items-center justify-center hover:border-[#c5a059] hover:text-[#c5a059] transition-all">
               <Instagram className="w-4 h-4" />
             </a>
-            <a href="https://Facebook.com" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-full border border-slate-800 flex items-center justify-center hover:border-[#c5a059] hover:text-[#c5a059] transition-all">
+            <a href="https://www.facebook.com/profile.php?id=61593311800882" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-full border border-slate-800 flex items-center justify-center hover:border-[#c5a059] hover:text-[#c5a059] transition-all">
               <Facebook className="w-4 h-4" />
             </a>
             <a href="https://anahitahospitality.com" className="w-8 h-8 rounded-full border border-slate-800 flex items-center justify-center hover:border-[#c5a059] hover:text-[#c5a059] transition-all">

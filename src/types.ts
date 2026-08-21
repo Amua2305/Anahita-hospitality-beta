@@ -92,13 +92,12 @@ export interface TeamMember {
   location: string;
 }
 
+export type GalleryCategory = 'Hotels' | 'Weddings' | 'Events' | 'Travel';
+
 export interface GalleryItem {
   id: string;
-  title: string;
-  category: 'Hotels' | 'Villas' | 'Weddings' | 'Events' | 'Travel';
+  category: GalleryCategory;
   image: string;
-  location: string;
-  caption: string;
 }
 
 export interface GlobalOffice {

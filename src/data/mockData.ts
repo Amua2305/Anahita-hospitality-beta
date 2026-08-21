@@ -193,69 +193,132 @@ export const TEAM_MEMBERS: TeamMember[] = [
 ];
 
 export const GALLERY_ITEMS: GalleryItem[] = [
+  // Hotels
   {
-    id: 'gal-1',
-    title: 'Azure Lagoon Villas at Twilight',
+    id: 'gal-h1',
     category: 'Hotels',
-    image: 'https://media.licdn.com/dms/image/v2/D4E12AQFzCUXI4JjWjw/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1664351128180?e=2147483647&v=beta&t=yy2Q-l-0996_ECbJei266e18lF2mjZ4oEN0p-ldu7nQ',
-    location: 'North Malé Atoll, Maldives',
-    caption: 'Bespoke overwater villa curation with solar glass tiles and infinity pool.'
+    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1200'
   },
   {
-    id: 'gal-2',
-    title: 'Historic Lemon Terrace Gala',
+    id: 'gal-h2',
+    category: 'Hotels',
+    image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=1200'
+  },
+  {
+    id: 'gal-h3',
+    category: 'Hotels',
+    image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=1200'
+  },
+  {
+    id: 'gal-h4',
+    category: 'Hotels',
+    image: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=1200'
+  },
+  {
+    id: 'gal-h5',
+    category: 'Hotels',
+    image: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=1200'
+  },
+  {
+    id: 'gal-h6',
+    category: 'Hotels',
+    image: 'https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&q=80&w=1200'
+  },
+
+  // Weddings
+  {
+    id: 'gal-w1',
     category: 'Weddings',
-    image: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1000',
-    location: 'Positano, Italy',
-    caption: 'An intimate sunset wedding celebration for 120 VIP guests overlooking the sea.'
+    image: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1200'
   },
   {
-    id: 'gal-3',
-    title: 'Kyoto Zen Tea Garden Suite',
-    category: 'Villas',
-    image: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1000',
-    location: 'Kyoto, Japan',
-    caption: 'Traditional Sukiya timber craftsmanship bathed in gentle morning light.'
+    id: 'gal-w2',
+    category: 'Weddings',
+    image: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&q=80&w=1200'
   },
   {
-    id: 'gal-4',
-    title: 'Courchevel Alpine Fireside Lounge',
+    id: 'gal-w3',
+    category: 'Weddings',
+    image: 'https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&q=80&w=1200'
+  },
+  {
+    id: 'gal-w4',
+    category: 'Weddings',
+    image: 'https://images.unsplash.com/photo-1545232979-8bf68ee9b1af?auto=format&fit=crop&q=80&w=1200'
+  },
+  {
+    id: 'gal-w5',
+    category: 'Weddings',
+    image: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&q=80&w=1200'
+  },
+  {
+    id: 'gal-w6',
+    category: 'Weddings',
+    image: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80&w=1200'
+  },
+
+  // Events
+  {
+    id: 'gal-e1',
     category: 'Events',
-    image: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=1000',
-    location: 'French Alps',
-    caption: 'Exclusive winter tasting menu curated by a 3-Michelin starred guest chef.'
+    image: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=1200'
   },
   {
-    id: 'gal-5',
-    title: 'Private Yacht Charter Excursion',
+    id: 'gal-e2',
+    category: 'Events',
+    image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80&w=1200'
+  },
+  {
+    id: 'gal-e3',
+    category: 'Events',
+    image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=1200'
+  },
+  {
+    id: 'gal-e4',
+    category: 'Events',
+    image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=1200'
+  },
+  {
+    id: 'gal-e5',
+    category: 'Events',
+    image: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&q=80&w=1200'
+  },
+  {
+    id: 'gal-e6',
+    category: 'Events',
+    image: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=1200'
+  },
+
+  // Travel
+  {
+    id: 'gal-t1',
     category: 'Travel',
-    image: 'https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?auto=format&fit=crop&q=80&w=1000',
-    location: 'Amalfi Coast, Italy',
-    caption: 'Tailored luxury sea voyage along hidden sea caverns and coastal villages.'
+    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1200'
   },
   {
-    id: 'gal-6',
-    title: 'The Palm Estate Infinity Pool',
-    category: 'Villas',
-    image: 'https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&q=80&w=1000',
-    location: 'Dubai, UAE',
-    caption: 'Custom 50-meter temperature controlled pool with sunken fire pit lounge.'
+    id: 'gal-t2',
+    category: 'Travel',
+    image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=1200'
   },
   {
-    id: 'gal-7',
-    title: 'Bespoke Culinary Pairing Experience',
-    category: 'Events',
-    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=1000',
-    location: 'Mayfair, London',
-    caption: 'Private wine tasting led by Master Sommelier with rare vintage vintages.'
+    id: 'gal-t3',
+    category: 'Travel',
+    image: 'https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?auto=format&fit=crop&q=80&w=1200'
   },
   {
-    id: 'gal-8',
-    title: 'Boutique Sanctuary Reception Lounge',
-    category: 'Hotels',
-    image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=1000',
-    location: 'Singapore',
-    caption: 'A sensory arrival space featuring living botanical walls and bespoke scent design.'
+    id: 'gal-t4',
+    category: 'Travel',
+    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=1200'
+  },
+  {
+    id: 'gal-t5',
+    category: 'Travel',
+    image: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=80&w=1200'
+  },
+  {
+    id: 'gal-t6',
+    category: 'Travel',
+    image: 'https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&q=80&w=1200'
   }
 ];
 
@@ -264,7 +327,7 @@ export const GLOBAL_OFFICES: GlobalOffice[] = [
     city: 'Delhi NCR',
     country: 'India (Headquarters)',
     address: 'B-88, Sector-2, Noida, Uttar Pradesh 201301',
-    phone: '+91 73039 07800',
+    phone: '+91 8840129250',
     email: 'info.anahitahospitality@gmail.com',
     timezone: 'IST (UTC+5:30)',
     image: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&q=80&w=800',
