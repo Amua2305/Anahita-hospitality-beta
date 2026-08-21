@@ -41,7 +41,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onPageChange, onOpenConsulta
         {/* Background Image with Dark Vignette Overlay */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://media.licdn.com/dms/image/v2/D4E12AQFzCUXI4JjWjw/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1664351128180?e=2147483647&v=beta&t=yy2Q-l-0996_ECbJei266e18lF2mjZ4oEN0p-ldu7nQ"
+            src="/hospitality image.jpeg"
             alt="Overwater Luxury Resort Maldives"
             className="w-full h-full object-cover object-center scale-105 animate-pulse duration-[10000ms]"
           />
