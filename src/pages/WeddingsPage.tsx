@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { WEDDING_PACKAGES } from '../data/mockData';
 import { WeddingPackage } from '../types';
-import { Sparkles, Heart, Crown, Calendar, Users, MapPin, Music, Camera, Utensils, ShieldCheck, ArrowRight, CheckCircle2, ChevronRight, Calculator, Send } from 'lucide-react';
+import { Sparkles, Heart, Crown, Calendar, Users, MapPin, Music, Camera, Utensils, ShieldCheck, ArrowRight, CheckCircle2 } from 'lucide-react';
 
 interface WeddingsPageProps {
   onOpenConsultation: () => void;
@@ -11,47 +11,11 @@ export const WeddingsPage: React.FC<WeddingsPageProps> = ({ onOpenConsultation }
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [activePackageModal, setActivePackageModal] = useState<WeddingPackage | null>(null);
 
-  // Estimator State
-  const [estGuests, setEstGuests] = useState<number>(200);
-  const [estVenueType, setEstVenueType] = useState<string>('Royal Palace');
-  const [estDays, setEstDays] = useState<number>(3);
-  const [selectedServices, setSelectedServices] = useState<string[]>([
-    'Royal Floral Architecture & Sets',
-    'Michelin & Royal Heritage Catering',
-    'Guest Hospitality & VVIP Airport Escorts'
-  ]);
-  const [isCalculated, setIsCalculated] = useState<boolean>(false);
-
   const categories = ['All', 'Royal Palace', 'Beachfront Resort', 'Heritage Fort', 'International Riviera'];
 
   const filteredPackages = selectedCategory === 'All'
     ? WEDDING_PACKAGES
     : WEDDING_PACKAGES.filter(p => p.category === selectedCategory);
-
-  const toggleService = (srv: string) => {
-    if (selectedServices.includes(srv)) {
-      setSelectedServices(selectedServices.filter(s => s !== srv));
-    } else {
-      setSelectedServices([...selectedServices, srv]);
-    }
-  };
-
-  const calculateEstimate = () => {
-    let basePerGuest = 1200; // $1200 per guest standard ultra-lux
-    if (estVenueType === 'Royal Palace') basePerGuest = 1800;
-    if (estVenueType === 'International Riviera') basePerGuest = 2500;
-    if (estVenueType === 'Heritage Fort') basePerGuest = 1500;
-
-    let dayMultiplier = estDays * 0.85;
-    let servicesAddon = selectedServices.length * 250;
-
-    let estMin = Math.round((basePerGuest + servicesAddon) * estGuests * dayMultiplier / 1000) * 1000;
-    let estMax = Math.round(estMin * 1.35 / 1000) * 1000;
-
-    return { estMin, estMax };
-  };
-
-  const { estMin, estMax } = calculateEstimate();
 
   return (
     <div className="pt-24 pb-20 bg-[#0b0f17] text-slate-100 min-h-screen">
@@ -89,13 +53,6 @@ export const WeddingsPage: React.FC<WeddingsPageProps> = ({ onOpenConsultation }
                 <Calendar className="w-4 h-4" />
                 <span>Reserve Wedding Dates</span>
               </button>
-              <a
-                href="#wedding-estimator"
-                className="px-6 py-3.5 border border-amber-900/40 bg-[#121824]/60 text-slate-200 hover:text-white font-medium text-xs uppercase tracking-[0.2em] rounded-xs hover:border-[#c5a059] transition-all flex items-center gap-2"
-              >
-                <Calculator className="w-4 h-4 text-[#c5a059]" />
-                <span>Estimate Wedding Cost</span>
-              </a>
             </div>
           </div>
         </div>
@@ -260,141 +217,6 @@ export const WeddingsPage: React.FC<WeddingsPageProps> = ({ onOpenConsultation }
               </div>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* Interactive Wedding Budget & Scope Estimator */}
-      <section id="wedding-estimator" className="py-20 bg-[#0e1420] border-y border-amber-900/20">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <span className="text-[11px] uppercase tracking-[0.3em] text-[#c5a059] font-medium flex items-center justify-center gap-2">
-              <Calculator className="w-3.5 h-3.5" />
-              Interactive Planning Tool
-            </span>
-            <h2 className="font-serif-luxury text-3xl sm:text-4xl text-white mt-2">
-              Custom Wedding Budget & Scope Planner
-            </h2>
-            <p className="text-slate-400 text-sm mt-2 font-light">
-              Configure your expected guest count, venue archetype, and preferred bespoke services for an instant scope orientation.
-            </p>
-          </div>
-
-          <div className="bg-[#121824] p-8 sm:p-10 border border-slate-800 shadow-2xl rounded-xs">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 pb-8 border-b border-slate-800">
-              {/* Guest Count */}
-              <div>
-                <label className="block text-xs uppercase tracking-wider text-slate-300 font-medium mb-2">
-                  Expected Guests ({estGuests})
-                </label>
-                <input
-                  type="range"
-                  min="50"
-                  max="800"
-                  step="25"
-                  value={estGuests}
-                  onChange={(e) => setEstGuests(Number(e.target.value))}
-                  className="w-full accent-[#c5a059] bg-slate-800 h-2 rounded-lg cursor-pointer"
-                />
-                <div className="flex justify-between text-[10px] text-slate-500 mt-1">
-                  <span>50 Guests</span>
-                  <span>400 Guests</span>
-                  <span>800+ Guests</span>
-                </div>
-              </div>
-
-              {/* Venue Type */}
-              <div>
-                <label className="block text-xs uppercase tracking-wider text-slate-300 font-medium mb-2">
-                  Venue Archetype
-                </label>
-                <select
-                  value={estVenueType}
-                  onChange={(e) => setEstVenueType(e.target.value)}
-                  className="w-full bg-[#0b0f17] border border-slate-700 text-slate-200 px-4 py-2.5 text-xs font-medium focus:border-[#c5a059] focus:outline-none"
-                >
-                  <option value="Royal Palace">Royal Palace (Udaipur / Jaipur)</option>
-                  <option value="Heritage Fort">Heritage Fort (Jodhpur / Jaisalmer)</option>
-                  <option value="Beachfront Resort">Beachfront Resort (Maldives / Goa)</option>
-                  <option value="International Riviera">International Riviera (Italy / France)</option>
-                </select>
-              </div>
-
-              {/* Duration */}
-              <div>
-                <label className="block text-xs uppercase tracking-wider text-slate-300 font-medium mb-2">
-                  Celebration Duration
-                </label>
-                <select
-                  value={estDays}
-                  onChange={(e) => setEstDays(Number(e.target.value))}
-                  className="w-full bg-[#0b0f17] border border-slate-700 text-slate-200 px-4 py-2.5 text-xs font-medium focus:border-[#c5a059] focus:outline-none"
-                >
-                  <option value="2">2 Days (Intimate Soirée)</option>
-                  <option value="3">3 Days (Grand Wedding)</option>
-                  <option value="4">4 Days (Extended Royal Festival)</option>
-                </select>
-              </div>
-            </div>
-
-            {/* Service Checkboxes */}
-            <div className="mb-8">
-              <label className="block text-xs uppercase tracking-wider text-slate-300 font-medium mb-4">
-                Include Turnkey Services
-              </label>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                {[
-                  'Royal Floral Architecture & Sets',
-                  'Michelin & Royal Heritage Catering',
-                  'Celebrity Artist & DJ Curation',
-                  'Guest Hospitality & VVIP Airport Escorts',
-                  'Private Charter Flights & Helicopter Transport',
-                  'Cinematic Photography & Drone Film'
-                ].map((srv) => {
-                  const isChecked = selectedServices.includes(srv);
-                  return (
-                    <button
-                      key={srv}
-                      type="button"
-                      onClick={() => toggleService(srv)}
-                      className={`p-3 text-left text-xs rounded-xs border transition-all flex items-center gap-2.5 ${
-                        isChecked
-                          ? 'bg-[#c5a059]/10 border-[#c5a059] text-white font-medium'
-                          : 'bg-[#0b0f17] border-slate-800 text-slate-400 hover:border-slate-700'
-                      }`}
-                    >
-                      <div className={`w-4 h-4 rounded-xs border flex items-center justify-center shrink-0 ${
-                        isChecked ? 'bg-[#c5a059] border-[#c5a059] text-[#0b0f17]' : 'border-slate-700'
-                      }`}>
-                        {isChecked && <CheckCircle2 className="w-3.5 h-3.5" />}
-                      </div>
-                      <span>{srv}</span>
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-
-            {/* Output Display */}
-            <div className="bg-[#0b0f17] p-6 border border-[#c5a059]/30 rounded-xs flex flex-col md:flex-row items-center justify-between gap-6">
-              <div>
-                <span className="text-[10px] uppercase tracking-widest text-[#c5a059] block font-medium">Estimated Turnkey Budget Guidance</span>
-                <div className="text-2xl sm:text-3xl font-serif-luxury text-white mt-1">
-                  ${estMin.toLocaleString()} – ${estMax.toLocaleString()} USD
-                </div>
-                <p className="text-slate-400 text-xs mt-1 font-light">
-                  Includes full venue management, hospitality concierge, decor sets & guest logistics for {estGuests} guests over {estDays} days.
-                </p>
-              </div>
-
-              <button
-                onClick={onOpenConsultation}
-                className="w-full md:w-auto px-6 py-3 bg-[#c5a059] hover:bg-[#e2c887] text-[#0b0f17] text-xs font-bold uppercase tracking-[0.2em] transition-all flex items-center justify-center gap-2 whitespace-nowrap shadow-xl"
-              >
-                <Send className="w-3.5 h-3.5" />
-                <span>Submit Wedding Brief</span>
-              </button>
-            </div>
-          </div>
         </div>
       </section>
 
